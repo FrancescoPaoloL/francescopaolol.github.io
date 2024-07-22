@@ -113,6 +113,21 @@ body {
 code.output {
     display: block;
     white-space: pre-wrap; /* Allows wrapping within the block */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    font-size: 1em; /* Base font size */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    code.output {
+        font-size: 0.8em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    code.output {
+        font-size: 0.6em; /* Further adjust font size for very small screens */
+    }
 }
 
 /* Link styles */
